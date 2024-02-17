@@ -36,7 +36,8 @@ p {
 }
 
 input[type="text"]{
-  color:#503c3c
+  color:#503c3c;
+  background-color:#f0f2f6;
 }
 
 [data-testid="InputInstructions"] {

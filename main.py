@@ -4,7 +4,7 @@ from random import randint
 
 # Set page configuration
 st.set_page_config(
-    page_title="states-quiz",
+    page_title="RKK",
     page_icon="icon.jpg",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -13,7 +13,7 @@ st.set_page_config(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style',unsafe_allow_html=True)
 
-st.header("कहानी प्रत्येक राज्य की 📜🍂")
+st.header("राज्यों का खेल🦚")
 
 # Load data from states.json
 with open("states.json", "r") as f:
@@ -41,6 +41,11 @@ def display_state():
 
 # Function to check user's answer
 def check_answer():
+    # Checks if the user has entered an empty string
+    if not ss['user_answer']:
+        st.warning("Please enter an answer before submitting.")
+        return
+    
     # Checks the user's answer against the correct capital for the current state.
     # Updates the session state with whether the answer was correct, increments the score if correct,
     # checks if all states have been covered, and displays the state information if the answer is correct.
@@ -50,7 +55,6 @@ def check_answer():
             st.success("Correct!")
             if ss['state_quiz']['state'] not in ss['questions_covered']:
                 ss['score'] += 1
-                print(ss['score'])
             if len(data) == ss['score']:
                 st.write("Congratulations! You have got all Indian state's capitals covered")
                 quit_game()

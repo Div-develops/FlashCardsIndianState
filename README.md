@@ -1,7 +1,7 @@
 # कहानी प्रत्येक राज्य की 
 
 ## Overview
-The States Quiz App is a Streamlit-based web application designed to help users learn and test their knowledge of Indian states and their capitals. Users are presented with a series of questions asking for the capital of a given Indian state. They can input their answer and check if it's correct. The app also provides a "Next" button to move to the next question and a "Quit" button to exit the quiz.
+कहानी प्रत्येक राज्य की App is a Streamlit-based web application designed to help users learn and test their knowledge of Indian states and their capitals. Users are presented with a series of questions asking for the capital of a given Indian state. They can input their answer and check if it's correct. The app also provides a "Next" button to move to the next question and a "Quit" button to exit the quiz.
 
 ## Features
 - Random selection of Indian states for quiz questions.Data are gathered from scraping state information and images.

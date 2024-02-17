@@ -20,24 +20,25 @@ h3 {
   font-family: "Poppins" !important;
 }
 
-.st-emotion-cache-l9bjmx {
-  font-family: "Poppins" !important;
-  color: #503c3c !important;
-}
-
-.st-b7 {
-  background-color: #e8e2e2 !important;
-}
-
-.st-emotion-cache-7ym5gk {
-  background-color: #617143;
-  color: whitesmoke;
-}
-
 p {
   font-family: "Poppins" !important;
 }
 
-.st-emotion-cache-1li7dat{
-  visibility: hidden!important;
+
+[data-testid="stWidgetLabel"] {
+  color:#503c3c
+}
+
+
+[data-testid="baseButton-secondary"] {
+  background-color: #617143;
+  color:whitesmoke
+}
+
+input[type="text"]{
+  color:#503c3c
+}
+
+[data-testid="InputInstructions"] {
+  visibility: hidden;
 }

@@ -76,6 +76,8 @@ def generate_new_question():
     ss['submitted'] = False  # Reset form submitted state
     st.rerun()
 
+
+
 # Function to quit the game
 def quit_game():
     ss['keep_play'] = False
@@ -93,8 +95,7 @@ if ss['keep_play']:
     # Shows the question text, input for user's answer, and buttons to check answer,
     # get next question, and quit game. State is updated on button clicks.
     st.subheader(f"What is the capital of {ss['state_quiz']['state']}?")
-    ss['user_answer'] = st.text_input("Enter your answer", key=f"input_{ss['key']}")  
-
+    ss['user_answer'] = st.text_input("Enter your answer", key=f"input_{ss['key']}",placeholder="")  
     button_container = st.container()
     
     with button_container:

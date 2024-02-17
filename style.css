@@ -43,7 +43,10 @@ p {
   background-color: #617143;
   color:whitesmoke
 }
-
+[data-testid="baseButton-primary"] {
+  background-color: rgb(255, 75, 75);
+  color: whitesmoke
+}
 input[type="text"]{
   color:#503c3c;
   background-color:#f0f2f6;

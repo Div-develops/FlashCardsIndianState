@@ -1,0 +1,283 @@
+import streamlit as st
+import json
+import random
+
+with open("states.json", "r") as f:
+    data = json.load(f)
+
+st.header("कहानी प्रत्येक राज्य की 📜🍂")
+
+def display_state(state_data):
+    state = state_data['state']
+    capital = state_data['capital']
+    date_of_formation = state_data['date_of_formation']
+    official_language = state_data['official_language']
+    costume_img = state_data['costume_img']
+    with placeholder.container():
+        st.write(f"State: {state}")
+        st.write(f"Capital: {capital}")
+        st.write(f"Date of Formation: {date_of_formation}")
+        st.write(f"Official Language: {official_language}")
+        st.image(costume_img, caption='Costume Image')
+
+
+placeholder = st.empty()
+if 'state_index' not in st.session_state:
+    st.session_state.state_index = random.randint(0, len(data) - 1)
+
+display_state(data[st.session_state.state_index])
+
+if st.button('Next State'):
+    st.session_state.state_index = random.randint(0, len(data) - 1)
+    display_state(data[st.session_state.state_index])
+
+
+
+
+
+    # Additional functionality
+
+
+
+# if "answer_text" not in st.session_state:
+#     st.session_state.my_text = ""
+
+# if st.session_state.my_text != capital:
+#     st.error("Wrong answer!")
+
+
+# def submit():
+#     st.session_state.answer_text = st.session_state.widget
+
+# st.write(f"What is the capital of {state}")
+# st.text_input("Enter text here", key="widget", on_change=submit)
+
+# answer_text = st.session_state.my_text
+
+# if st.button('Check Answer'):
+#     if answer_text.strip().lower() == capital.lower():
+#         st.success("Correct!")
+#     elif answer_text.strip() == "":
+#         st.warning("Please enter an answer!")
+#     else:
+#         st.error("Incorrect! The correct answer is: " + capital)
+
+
+
+
+def display_state(state_data):
+    state = state_data['state']
+    capital = state_data['capital']
+    date_of_formation = state_data['date_of_formation']
+    official_language = state_data['official_language']
+    costume_img = state_data['costume_img']
+    st.write(f"State: {state}")
+    st.write(f"Capital: {capital}")
+    st.write(f"Date of Formation: {date_of_formation}")
+    st.write(f"Official Language: {official_language}")
+    st.image(costume_img, caption='Costume Image')
+
+def generate_random_state(previous_state_index=None):
+    if previous_state_index is not None:
+        available_states = list(range(len(data)))
+        available_states.remove(previous_state_index)
+        state_index = random.choice(available_states)
+    else:
+        state_index = random.randint(0, len(data) - 1)
+    return data[state_index], state_index
+
+def display_state_info(state_data, input_key):
+    user_guess = st.text_input(f"Guess the capital of the {state_data['state']}:", key=input_key)
+    if st.button('Check Answer'):
+        if user_guess:
+            check_answer(user_guess, state_data)
+
+def check_answer(user_guess, state_data):
+    correct_answer = state_data['capital']
+    if user_guess.lower() == correct_answer.lower():
+        st.write("Correct! That's the capital of the state.")
+        display_state(state_data)
+        if st.button('Next State'):
+            next_state_data, next_state_index = generate_random_state(st.session_state.previous_state_index)
+            st.session_state.previous_state_index = next_state_index
+            st.empty()
+            display_state_info(next_state_data, "next_state")
+    else:
+        st.write("Incorrect. Please try again.")
+
+if 'previous_state_index' not in st.session_state:
+    state_data, state_index = generate_random_state()
+    st.session_state.previous_state_index = state_index
+    display_state_info(state_data, "initial_state")
+else:
+    state_data, state_index = generate_random_state(st.session_state.previous_state_index)
+    st.session_state.previous_state_index = state_index
+    display_state_info(state_data, "next_state")
+
+
+
+### 
+
+import streamlit as st
+import json
+from random import randint
+
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="✒️",
+    layout="centered",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
+
+# newline char
+def nl(num_of_lines):
+    for i in range(num_of_lines):
+        st.write(" ")
+
+with open("states.json", "r") as f:
+    data = json.load(f)
+
+st.header("कहानी प्रत्येक राज्य की 📜🍂")
+nl(2)
+
+ss = st.session_state
+if 'state_quiz' not in ss:
+    ss['state_quiz'] = data[randint(0, len(data) - 1)]  # will output a dictionary containing all information of the state
+    ss['user_answer'] = None
+    ss['keep_play'] = True
+    ss['submitted'] = False
+    ss['key'] = 0
+
+
+def display_state():
+    state = ss['state_quiz']['state']
+    capital = ss['state_quiz']['capital']
+    date_of_formation = ss['state_quiz']['date_of_formation']
+    official_language = ss['state_quiz']['official_language']
+    costume_img = ss['state_quiz']['costume_img']
+    st.write(f"State: {state}")
+    st.write(f"Capital: {capital}")
+    st.write(f"Date of Formation: {date_of_formation}")
+    st.write(f"Official Language: {official_language}")
+    st.image(costume_img, caption='Costume Image')
+
+def check_answer():
+    if ss.submitted and (ss['user_answer'] is not None and ss['user_answer'] != ""):
+        if ss['user_answer'].lower() == ss['state_quiz']['capital'].lower():
+            st.success("Correct!")
+            display_state()
+        else:
+            st.error("Incorrect!")
+        
+def generate_new_question():
+    ss['state_quiz'] = data[randint(0, len(data) - 1)]
+    ss['user_answer'] = None
+    ss['submitted'] = False
+    ss['key'] += 1
+
+question = ss['state_quiz']['state']
+st.write(f"What is the capital of {question}?")
+with st.form(f"my_form{ss['key']}"):
+    ss['user_answer'] = st.text_input("Enter your answer")
+    submitted = st.form_submit_button("Submit", on_click=check_answer)
+    ss['submitted'] = submitted
+    if ss['submitted']:
+        check_answer()
+
+if st.button("Next"):
+    generate_new_question()
+
+
+
+#############
+
+import streamlit as st
+import json
+from random import randint
+
+# Set page configuration
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="✒️",
+    layout="centered",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
+
+# Load data from states.json
+with open("states.json", "r") as f:
+    data = json.load(f)
+
+# Set up Streamlit session state
+ss = st.session_state
+if 'state_quiz' not in ss:
+    ss['state_quiz'] = data[randint(0, len(data) - 1)]
+    ss['user_answer'] = None
+    ss['keep_play'] = True
+    ss['submitted'] = False
+    ss['key'] = 0
+    ss['score']=0
+    ss['questions_covered'] = set()
+
+# Function to display state information
+def display_state():
+    state_info = ss['state_quiz']
+    st.write(f"State: {state_info['state']}")
+    st.write(f"Capital: {state_info['capital']}")
+    st.write(f"Date of Formation: {state_info['date_of_formation']}")
+    st.write(f"Official Language: {state_info['official_language']}")
+    st.image(state_info['costume_img'], caption='Costume Image')
+
+# Function to check user's answer
+def check_answer():
+    ss['submitted'] = True
+    if ss['submitted']:
+        if ss['user_answer'].lower() == ss['state_quiz']['capital'].lower():
+            st.success("Correct!")
+            ss['score'] += 1
+            if len(data) == ss['score']:
+                st.write("Congratulation!Ab tum India ke saare capitals ke naam jaan gye ho.")
+                quit_game()
+            display_state()
+    
+        else:
+            st.error("Incorrect!")
+
+# Function to generate a new question
+def generate_new_question():
+    ss['key'] += 1
+    ss['state_quiz'] = data[randint(0, len(data) - 1)]
+    ss['user_answer'] = None
+    ss['submitted'] = False  # Reset form submitted state
+    ss['questions_covered'].add(ss['state_quiz']['state'])
+    st.rerun()
+
+# Function to quit the game
+def quit_game():
+    ss['keep_play'] = False
+    st.rerun()
+
+
+if ss['keep_play']==False:
+    st.write(f"Your score was {ss['score']}/{len(ss['questions_covered'])}")
+    st.write("Thanks for playing!")
+# Main part of the app
+if ss['keep_play']:
+    st.write(f"What is the capital of {ss['state_quiz']['state']}?")
+    ss['user_answer'] = st.text_input("Enter your answer", key=f"input_{ss['key']}")  
+    if st.button("Check", key=f"check_button_{ss['key']}"):
+        check_answer()
+    if st.button("Next", key=f"next_button_{ss['key']}"):
+        generate_new_question()
+    if st.button("Quit", key=f"quit_button_{ss['key']}",type="primary"):
+        quit_game()
+

@@ -1,0 +1,226 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "capital": "Amaravati",
+    "date_of_formation": "1st Nov 1956",
+    "cue":"Amar And Vati",
+    "official_language": "Telugu",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f0bd9d06be741b026fb45_Women%20in%20vibrant%20Andhra%20Sarees%20and%20men%20in%20traditional%20Dhoti%20and%20Kurta.jpg"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "capital": "Itanagar",
+    "date_of_formation": "20th Feb 1987",
+    "cue":"Arun ke ghr Itte se bana he",
+    "official_language": "English",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f0fb665f7ce00cfa4b873_Tribal%20attire%20of%20Arunachal%20Pradesh%20with%20women%20and%20men%20.jpg"
+  },
+  {
+    "state": "Assam",
+    "capital": "Dispur",
+    "date_of_formation": "26th Jan 1950",
+    "cue":"Assam Tea --> Dish Antenna",
+    "official_language": "Assamese",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f1047f0a94a3bda88673a_Assamese%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Bihar",
+    "capital": "Patna",
+    "date_of_formation": "26th Jan 1950",
+    "cue": "Bahar Patang ud rahi he ",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f110c47effaf2336c3763_Bihari%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Chhattisgarh",
+    "capital": "Raipur",
+    "date_of_formation": "1st Nov 2000",
+    "cue":"Chaat --> Raita",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f119cdfb5b2c65eead3cd_Chhattisgarh%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Goa",
+    "capital": "Panaji",
+    "date_of_formation": "30th May 1987",
+    "cue":"Goa --> Paani",
+    "official_language": "Konkani, English",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f122bebaee9b7fae4a31b_Goan%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Gujarat",
+    "capital": "Gandhinagar",
+    "date_of_formation": "1st May 1960",
+    "cue":"Dandhi march(Happened in guajarat..!) --> Gandhi",
+    "official_language": "Gujarati",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f2249e8a61e69534b41ba_Gujarati%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Haryana",
+    "capital": "Chandigarh",
+    "date_of_formation": "1st Nov 1966",
+    "cue":"Haar --> Chandi",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f22d69194efa108973556_Haryanvi%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "capital": "Shimla",
+    "date_of_formation": "25th Jan 1971",
+    "cue":"Him --> She",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f2320328403655766a90b_Himachali%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Jharkhand",
+    "capital": "Ranchi",
+    "date_of_formation": "15th Nov 2000",
+    "cue":"Jar --> Rangeen",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f247e0a1357ae514a849d_Jharkhand%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Karnataka",
+    "capital": "Bengaluru",
+    "date_of_formation": "1st Nov 1956",
+    "cue":"lekha CAR se BANGLES lene gyi",
+    "official_language": "Kannada",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f24c29c9033d4fe2c93b8_Karnataka%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Kerala",
+    "capital": "Thiruvananthapuram",
+    "cue":"Karela --> Bitter(Longest capital name)",
+    "date_of_formation": "1st Nov 1956",
+    "official_language": "Malayalam",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f25083cd0ad46af571634_Kerala%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "capital": "Bhopal",
+    "date_of_formation": "1st Nov 1956",
+    "cue":"ManDhir --> Prasad --> Bhog",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f254f533a4d1ca3e138f9_Madhya%20Pradesh%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Maharashtra",
+    "capital": "Mumbai",
+    "date_of_formation": "1st May 1960",
+    "cue":"Mumbai is Big == Maha",
+    "official_language": "Marathi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f2592517abd83074f4d8c_Maharashtrian%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Manipur",
+    "capital": "Imphal",
+    "date_of_formation": "21st Jan 1972",
+    "cue":"Money --> Important",
+    "official_language": "Manipuri",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f25d94ad00a6bf38fe6df_Manipuri%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Meghalaya",
+    "capital": "Shillong",
+    "date_of_formation": "21st Jan 1972",
+    "cue":"MEG = CLOUD --> LONG",
+    "official_language": "English",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f261e4ad00a6bf390372f_Meghalayan%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Mizoram",
+    "capital": "Aizawl",
+    "date_of_formation": "20th Feb 1987",
+    "cue":"Capital also has a Z in it",
+    "official_language": "Mizo",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f26684ad43a4620dbf83e_Mizoram%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Nagaland",
+    "capital": "Kohima",
+    "date_of_formation": "1st Dec 1963",
+    "cue":"Nag --> Koma",
+    "official_language": "English",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f26c405fb8e2d92382197_Naga%20tribal%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Odisha",
+    "capital": "Bhubaneswar",
+    "date_of_formation": "26th Jan 1950",
+    "cue": "Bhuvneshwar  ke pass AUDI he",
+    "official_language": "Odia",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f27154e1a5798cad7c144_Odisha%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Punjab",
+    "capital": "Chandigarh",
+    "date_of_formation": "1st Nov 1956",
+    "cue":"PUNjab ke log CHAach pite he",
+    "official_language": "Punjabi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f275c693b6a4fff18ca8f_Punjabi%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Rajasthan",
+    "capital": "Jaipur",
+    "date_of_formation": "1st Nov 1956",
+    "cue": "Raja ki Jai ho",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f27ad4e1a5798cad84f58_Rajasthani%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Sikkim",
+    "capital": "Gangtok",
+    "date_of_formation": "16th May 1975",
+    "cue":"Gangsters --> Sick",
+    "official_language": "English, Nepali, Sikkimese, Lepcha",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f27f439e238acfb490ae3_Sikkimese%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Tamil Nadu",
+    "capital": "Chennai",
+    "date_of_formation": "26th Jan 1950",
+    "cue":"TAMACHE",
+    "official_language": "Tamil",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f284edfb5b2c65efc3cb5_Tamil%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Telangana",
+    "capital": "Hyderabad",
+    "date_of_formation": "2nd June 2014",
+    "cue":"TEL --> PAANI (HYDRA)",
+    "official_language": "Telugu",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f28a569c35796e50b52c9_Telangana%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Tripura",
+    "capital": "Agartala",
+    "date_of_formation": "21st Jan 1972",
+    "cue":"Tripod --> Agarbatti",
+    "official_language": "Bengali, English, Kokborok",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f28f01e0841306e0e1934_Tripura%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "capital": "Lucknow",
+    "date_of_formation": "26th Jan 1950",
+    "cue":"LUCK --> UPar vala deta he",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f293ed93d37b5a9edc3b6_Uttar%20Pradesh%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "Uttarakhand",
+    "capital": "Dehradun",
+    "date_of_formation": "9th Nov 2000",
+    "cue":"UTTAR DE",
+    "official_language": "Hindi",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f297a9c9033d4fe303225_Uttarakhand%20women%20and%20men%20in%20traditional%20attire.jpg"
+  },
+  {
+    "state": "West Bengal",
+    "capital": "Kolkata",
+    "date_of_formation": "1st Nov 1956",
+    "cue":"WBc cells infections ka KOL(call) KAAT dete he",
+    "official_language": "Bengali, English",
+    "costume_img": "https://assets-global.website-files.com/637f32081b68888e6d1bdd50/655f29c344dcc416769b24d2_Bengali%20women%20and%20men%20in%20traditional%20attire.jpg"
+  }
+]

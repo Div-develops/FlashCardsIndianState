@@ -51,7 +51,7 @@ def check_answer():
     # checks if all states have been covered, and displays the state information if the answer is correct.
     ss['submitted'] = True
     if ss['submitted']:
-        if ss['user_answer'].lower() == ss['state_quiz']['capital'].lower():
+        if ss['user_answer'].lower().strip() == ss['state_quiz']['capital'].lower():
             st.success("Correct!")
             if ss['state_quiz']['state'] not in ss['questions_covered']:
                 ss['score'] += 1

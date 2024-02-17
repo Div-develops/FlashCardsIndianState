@@ -29,6 +29,15 @@ p {
   color:#503c3c
 }
 
+[data-testid="stNotificationContentWarning"] {
+  color: #926c05
+}
+[data-testid="stNotificationContentError"] {
+  color: #7d353b
+}
+[data-testid="stNotificationContentSuccess"] {
+  color: #177267
+}
 
 [data-testid="baseButton-secondary"] {
   background-color: #617143;

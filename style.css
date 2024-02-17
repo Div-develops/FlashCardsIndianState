@@ -47,6 +47,14 @@ p {
   background-color: rgb(255, 75, 75);
   color: whitesmoke
 }
+[data-testid="baseButton-secondary"]:focus:not(:active) {
+  background-color:#617143;
+  color: whitesmoke;
+  border:none;
+}
+[data-testid="element-container"] {
+  color: #503c3c !important;  
+}
 input[type="text"]{
   color:#503c3c;
   background-color:#f0f2f6;

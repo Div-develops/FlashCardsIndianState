@@ -1,4 +1,4 @@
-<img width="211" alt="image" src="https://github.com/Div-develops/FlashCardsIndianState/assets/75534560/630b0255-efe4-4cf2-80a3-a4355373af67"># राज्यों का खेल🦚
+#### राज्यों का खेल🦚
 
 ## Overview
 राज्यों का खेल App is a Streamlit-based web application designed to help users learn and test their knowledge of Indian states and their capitals. Users are presented with a series of questions asking for the capital of a given Indian state. They can input their answer and check if it's correct. The app also provides a "Next" button to move to the next question and a "Quit" button to exit the quiz.
